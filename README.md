@@ -14,6 +14,12 @@ chmod +x /usr/local/bin/chromedriver
 java -jar selenium-server-standalone-3.4.0.jar &
 ```
 
+## Stop selenium
+
+```shell
+ps aux | grep selenium-server-standalone | grep -v grep |awk {'print $2'} |xargs kill -9
+```
+
 ## Run program
 
 ```shell
